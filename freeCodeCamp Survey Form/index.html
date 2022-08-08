@@ -8,23 +8,26 @@
         <h1 id="title">freeCodeCamp Survey Form</h1>
         <p id="description">Thank you for taking the time to help us improve the platform</p>
         <form id="survey-form">
+            <fieldset>
             <label id="name-label"> Name
                 <input type="text"  
                 id="name" placeholder="Enter your name" 
-                required value="name">
+                required value="name" class="block">
             </label>
             <label id="email-label"> Email
                 <input type="email"  
                 id="email" required placeholder="Enter your email" 
-                value="email">
+                value="email" class="block">
             </label>
-            <label id="number-label"> Age(optional)
+            <label id="number-label" class="block"> Age(optional)
                 <input type="number" placeholder="Age" 
                  min="10" max="99" 
-                value="number" id="number">
+                value="number" id="number" class="block">
             </label>
-            <label> Which option best describes your current role?
-                <select id="dropdown">
+            </fieldset>
+            <fieldset>
+                <label> Which option best describes your current role?
+                <select id="dropdown" class="block">
                     <option value="" disabled>Select current role</option>
                     <option value="student">Student</option>
                     <option value="job">Full Time Job</option>
@@ -33,19 +36,51 @@
                     <option value="other">Other</option>
                 </select>
             </label>
-                
-            <fieldset>
-                    <legend>Would you recommend freeCodeCamp to a friend?</legend>
-                <label>
+           </fieldset>
+           <fieldset >
+            <legend>Would you recommend freeCodeCamp to a friend?</legend>
+                <label class="block">
                     <input type="radio" name="recommend" value="Definitely">Definitely
                 </label>
-                <label>
+                <label class="block">
                     <input type="radio" name="recommend" value="maybe">Maybe
                 </label>
-                <label>
+                <label class="block">
                     <input type="radio" name="recommend" value="not-sure">Not sure
                 </label>
             </fieldset>
+            <fieldset >
+                <label> Which option best describes your current role?
+                <select id="dropdown2" class="block">
+                    <option value="" disabled>Select an option</option>
+                    <option value="challenges">Challenges</option>
+                    <option value="progects">Projects</option>
+                    <option value="community">Community</option>
+                    <option value="source">Open Source</option>
+                </select>
+            </label>
+            </fieldset>
+            <fieldset >
+                <legend>What would you like to see improved? (Check all that apply)</legend>
+
+                <label class="block"><input type="checkbox" value="front"> Front-end Projects</label>
+                <label class="block"><input type="checkbox" value="back"> Back-end Projects</label>
+                <label class="block"><input type="checkbox" value="data"> Data Visualization</label>
+                <label class="block"><input type="checkbox" value="challeng"> Challenges</label>
+                <label class="block"><input type="checkbox" value="opensource"> Open Source Community</label>
+                <label class="block"><input type="checkbox" value="helprooms"> Gitter help rooms</label>
+                <label class="block"><input type="checkbox" value="videos"> Videos</label>
+                <label class="block"><input type="checkbox" value="meetups"> City Meetups</label>
+                <label class="block"><input type="checkbox" value="wiki"> Wiki</label>
+                <label class="block"><input type="checkbox" value="forum"> Forum</label>
+                <label class="block"><input type="checkbox" value="courses"> Additional Courses</label>
+            </fieldset>
+            <fieldset >
+                <label> Any comments or suggestions?
+                <textarea class="block" value="comment" placeholder="Enter your comment here..."></textarea>
+            </label>
+            </fieldset>
+            <input type="submit" value="submit" > 
         </form>
 
     </body>
