@@ -5,21 +5,23 @@
 <link rel="stylesheet" href="styles.css">
     </head>
     <body>
+        <header>
         <h1 id="title">freeCodeCamp Survey Form</h1>
         <p id="description">Thank you for taking the time to help us improve the platform</p>
+       </header>
         <form id="survey-form">
             <fieldset>
             <label id="name-label"> Name
                 <input type="text"  
                 id="name" placeholder="Enter your name" 
-                required value="name" class="block">
+                required value="name" class="block" class="play">
             </label>
             <label id="email-label"> Email
                 <input type="email"  
                 id="email" required placeholder="Enter your email" 
-                value="email" class="block">
+                value="email" class="block" class="width">
             </label>
-            <label id="number-label" class="block"> Age(optional)
+            <label id="number-label" class="block" class="width"> Age(optional)
                 <input type="number" placeholder="Age" 
                  min="10" max="99" 
                 value="number" id="number" class="block">
@@ -27,7 +29,7 @@
             </fieldset>
             <fieldset>
                 <label> Which option best describes your current role?
-                <select id="dropdown" class="block">
+                <select id="dropdown" class="block" class="width">
                     <option value="" disabled>Select current role</option>
                     <option value="student">Student</option>
                     <option value="job">Full Time Job</option>
@@ -39,7 +41,7 @@
            </fieldset>
            <fieldset >
             <legend>Would you recommend freeCodeCamp to a friend?</legend>
-                <label class="block">
+                <label class="block" >
                     <input type="radio" name="recommend" value="Definitely">Definitely
                 </label>
                 <label class="block">
@@ -51,7 +53,7 @@
             </fieldset>
             <fieldset >
                 <label> Which option best describes your current role?
-                <select id="dropdown2" class="block">
+                <select id="dropdown2" class="block" class="width">
                     <option value="" disabled>Select an option</option>
                     <option value="challenges">Challenges</option>
                     <option value="progects">Projects</option>
